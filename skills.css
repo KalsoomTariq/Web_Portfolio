@@ -1,0 +1,73 @@
+
+.kalsoom-container {
+    width:23%;
+    margin:1% 1%;
+    padding: 15px;
+    background-color: rgba(128, 86, 107, 0.5);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color)
+}
+
+.row{
+    height:110vh;
+}
+
+.kalsoom-container:hover {
+
+    background-color: rgb(247, 211, 217);
+    border: 2px solid var(--secondary-color)
+}
+
+.kalsoom-container:hover .kalsoom-text h2{
+    color: var(--primary-color);
+}
+
+
+.kalsoom-icon img{
+    float:left;
+    width:80px;
+    height:80px;
+}
+.kalsoom-icon {
+    float: left;
+    margin:10px 0px 0px 10px;
+    padding: 10px 0px 0px 30px;
+    width: 50%;
+    font-size: 100px;
+}
+
+.kalsoom-text {
+    padding: 5px;
+    line-height: em;
+    margin: 5px;
+    overflow: hidden; 
+}
+
+.skill-kalsoom-icon {
+
+    float: center;
+    font-size: 24px;
+}
+
+
+@media (width < 900px)
+{
+    .kalsoom-container {
+        width:40%;
+        margin:5% 5%;
+    }
+    .row{
+        height:110vh;
+    }
+}
+
+@media (width < 600px)
+{
+    .kalsoom-container {
+        width:50%;
+        margin:auto auto;
+    }
+    .row{
+        height:110vh;
+    }
+}

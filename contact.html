@@ -1,6 +1,6 @@
 <!-------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-					HOME PAGE
+					CONTACT PAGE
 ---------------------------------------------------------------------------------
 --------------------------------------------------------------------------------->
 <!DOCTYPE html>
@@ -11,8 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="styles.css">
-	<link href="home.css" rel="stylesheet">
+	<link rel="stylesheet" href="contact.css">
 	<title>Web Portfolio</title>
 </head>
 <body>
@@ -47,33 +48,40 @@
 <img class="kalsoom-mobile" src="./assets/img.png" alt="ERROORR">
 <img class="kalsoom-video" src="./assets/img2.png" alt="ERROORR">
 <div class="kalsoom-overlay"></div>
-	
-
 <!--------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 					MAIN SECTION
 ----------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------->
 	<div class="content">
-		<div class="row">
-			<div class="kalsoom-title col-lg-6 col-md-12">
-				<h1>Kalsoom Tariq</h1>
-				<p>Computer Scientist | Web Designer | Software Developer | Data Enthusiast</p>
+		<form class="kalsoom-form row">
+			<div class="kalsoom-item col-md-12 col-lg-6">
+				<label for="name" >
+				<i class="material-icons">person</i> Name
+			</label>
+			<input type="text" id="name" name="name" required>
 			</div>
-		
-			<div class="kalsoom-about col-lg-6 col-md-12">
-				<h1>About Me</h1>
-				<br>
-				<p>Passionate tech enthusiast with strong leadership and teamwork skills. 
-					Adept at problem-solving and debugging, I thrive in collaborative environments. 
-					Focused on leveraging <b> Machine Learning </b> and <b>Artificial Intelligence </b> to drive innovative solutions. 
-					Ready to contribute to transformative projects that push the boundaries of technology.</p>
-				</br>
+			<div class="kalsoom-item col-md-12 col-lg-6">
+				<label for="contact">
+					<i class="material-icons">phone</i> Contact
+				</label>
+				<input type="tel" id="contact" name="contact" required>
 			</div>
-			<div class="kalsoom-msg">
-				<p><b><em>Join me in this exciting adventure, and let's build something incredible together!</em></b></p>
+			<div class="kalsoom-item col-md-12 col-lg-6">
+				<label for="email">
+					<i class="material-icons">email</i> Email
+				</label>
+				<input type="email" id="email" name="email" required>
 			</div>
-		</div>
+			<div class="kalsoom-item col-md-12 col-lg-6">
+				<label for="project">
+					<i class="material-icons">description</i> Message
+				</label>
+				<textarea id="project" name="project" rows="4" required></textarea>
+			</div>	
+
+			<div class="kalsoom-item col-md-12"><button type="submit">Submit</button></div>
+		</form>
 	</div>
 		
 

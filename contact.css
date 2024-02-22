@@ -1,0 +1,68 @@
+.kalsoom-form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.kalsoom-item{
+    padding: 0% 5% 0% 0%;
+    font-size: 1rem;
+}
+
+.kalsoom-item input, textarea 
+{
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+    background-color: var(--extra-light);
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+
+.kalsoom-item textarea{
+    margin-bottom: 0;
+}
+
+button 
+{
+    border-radius: 25px;
+    border: 2px solid var(--primary-color-dark);
+    margin-left: 0;
+    margin-top: 5%;
+    font-size: 1rem;
+    padding: 3%;
+    width: 25%;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (width < 900px) 
+{
+    .kalsoom-form{
+        max-width: 600px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .kalsoom-item{
+        padding:0;
+        margin: 2%;
+        font-size: 1.5rem;
+    }
+
+    .content{
+        padding: 5% 20% 20% 20%;
+    }
+    button{
+        width:50%;
+        margin-left:25%;
+    }
+
+}

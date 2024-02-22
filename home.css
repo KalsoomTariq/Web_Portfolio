@@ -1,0 +1,96 @@
+.kalsoom-title {
+    
+    padding: 5%;
+    align-items: center;
+
+}
+
+b{
+    color: var(--primary-color-dark);
+}
+
+.kalsoom-about h1{
+    color: var(--primary-color-dark);
+    font-size: 2rem;
+}
+.kalsoom-about p{
+    font-size: 1.2rem;
+}
+
+.kalsoom-about {
+    width: 45%;
+    padding:4%;
+    text-align: center;
+    height:45vh;
+    background: rgba(236, 164, 196, 0.8);
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.kalsoom-about:hover {
+    background-color: var(--secondary-color);
+}
+
+.kalsoom-title h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    margin: 5%;
+    margin-top: 0;
+}
+.kalsoom-title p{
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.kalsoom-msg{
+    margin-left: 30%;
+    padding: 5% 10% 0% 25%;
+}
+
+.kalsoom-msg b{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+@media (width < 900px) 
+{
+
+    .kalsoom-about {
+        width:fit-content;
+        margin:5px 10% 5% 10%;
+        height:25vh;
+        padding:5%;
+    }
+
+    .kalsoom-msg{
+        margin-left: 0;
+        align-content: center;
+        padding: 5% 10% 0% 20%;
+    }
+    
+    .kalsoom-msg b{
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+    }
+
+    .kalsoom-about h1{
+        font-size: 2rem;
+    }
+    .kalsoom-about p{
+        font-size: 1.3rem;
+    }
+
+    .kalsoom-title {
+        padding: 5% 10% 2% 10%;
+        margin-left:5%;   
+    }
+
+    .kalsoom-title h1{
+        margin: 5%;
+    }
+
+
+}

@@ -1,0 +1,183 @@
+.kalsoom-content 
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.kalsoom-card 
+{
+    margin-top:15%;
+    margin-bottom: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), var(--bg-img);
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 0 0 5em -1em black;
+    transition: all, 0.5s;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid var(--primary-color);
+    text-decoration: none;
+}
+
+.kalsoom-card:hover 
+{
+    transform: rotate(0);
+}
+
+.kalsoom-card h1 
+{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.kalsoom-card p {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+
+.kalsoom-card .kalsoom-kalsoom-tags 
+{
+    display: flex;
+}
+
+.kalsoom-card .kalsoom-kalsoom-tags .kalsoom-tag 
+{
+    font-size: 0.75em;
+    background: var(--secondary-color);
+    border-radius: 0.1rem;
+    padding: 0.2em 0.5em;
+    transition: all, 0.5s;
+    margin:0.3em auto;
+}
+
+.kalsoom-card:hover .kalsoom-kalsoom-tags .kalsoom-tag 
+{
+    background: var(--primary-color);
+    color: white;
+}
+
+.kalsoom-card .kalsoom-date 
+{
+    position: absolute;
+    padding: 0.5em;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    opacity: .8;
+}
+
+.kalsoom-card:before, .kalsoom-card:after 
+{
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.kalsoom-card:before 
+{
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+}
+
+.kalsoom-card:after 
+{
+    background: pink;
+    width: 200%;
+    height: 200%;
+}
+
+.kalsoom-card:hover 
+{
+    color: var(--primary-color);
+}
+
+.kalsoom-card:hover:before, .kalsoom-card:hover:after 
+{
+    transform: scale(1);
+}
+
+
+.kalsoom-project {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+    margin:auto;
+}
+
+.kalsoom-project img {
+    height: 3em;
+    margin-right: 0.5em;
+}
+
+.kalsoom-project h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.kalsoom-content 
+{
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (width < 900px) {
+    .kalsoom-content 
+    {
+        grid-template-columns: 1fr;
+    }
+    .kalsoom-project 
+    {
+        justify-content: center;
+    }
+    .kalsoom-grid .num 
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    color:var(--secondary-color);
+}
+tr:hover {
+    background-color:white;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
